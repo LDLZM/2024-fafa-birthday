@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Happy Birthday!!! :)</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <div class="relative">
+    <div class="count">
+
+      <div id="count-days" class="text">00</div>
+    </div>
+    <div class="padding">
+      <div id="time-hour" class="text">00</div>
+      <div class="time-temp">:</div>
+      <div id="time-minutes" class="text">00</div>
+      <div class="time-temp">:</div>
+      <div id="time-seconds" class="text">00</div>
+    </div>
+    <div class="padding-bottom">
+      <div id="time-year" class="text">00</div>
+      <div class="time-ltemp">-</div>
+      <div id="time-month" class="text">00</div>
+      <div class="time-ltemp">-</div>
+      <div id="time-day" class="text">00</div>
+    </div>
+
+
+
+
+
+  </div>
+  <script>
+    function time() {
+      var time = new Date();
+      var hour;
+      var minutes;
+      var seconds;
+      var year;
+      var month;
+      var day;
+      var start;
+      var end;
+      var leftday;
+      year = time.getFullYear();
+      month = time.getMonth();
+      day = time.getDate();
+      document.getElementById("time-year").innerHTML = year;
+      document.getElementById("time-month").innerHTML = month + 1;
+      document.getElementById("time-day").innerHTML = day;
+      start = time;
+      end = new Date(2024, 9, 18);
+
+      var dis = end.getTime() - start.getTime();
+      leftday = dis / (60 * 60 * 24 * 1000);
+      leftday = Math.floor(leftday);
+
+      var temph = time.getHours();
+      if (temph <= 9 && temph > 0) {
+        hour = "0" + temph;
+      } else {
+        hour = temph;
+      }
+      var tempm = time.getMinutes();
+      if (tempm <= 10 && tempm > 0) {
+        minutes = "0" + tempm;
+      } else {
+        minutes = tempm;
+      }
+
+      var temps = time.getSeconds();
+      if (temps <= 10 && temps > 0) {
+        seconds = "0" + temps;
+      } else {
+        seconds = temps;
+      }
+
+      document.getElementById("count-days").innerHTML = "倒计时" + leftday + "天"
+      document.getElementById("time-hour").innerHTML = hour;
+      document.getElementById("time-minutes").innerHTML = minutes;
+      document.getElementById("time-seconds").innerHTML = seconds
+
+    }
+    const d = document.getElementById("time-day");
+
+    window.setInterval("time()", 1000);
+  </script>
+
+
+  <div class="container">
+    <div class="one">
+      <h1 class="one">
+        <span data-node-name="greeting">Hi</span>
+        <span data-node-name="name">FaFa</span>
+      </h1>
+      <p class="two" data-node-name="greetingText">I am LZM!</p>
+    </div>
+    <div class="three">
+      <p data-node-name="text1">Today's your birthday!!! 😄 </p>
+    </div>
+    <div class="four">
+      <div class="text-box">
+        <p class="hbd-chatbox" data-node-name="textInChatBox">Happy birthday to you!! 🎂🎂🎂</p>
+        <p class="fake-btn" data-node-name="sendButtonLabel">Send</p>
+      </div>
+    </div>
+    <div class="five">
+      <p class="idea-1" data-node-name="text2">That's what I was going to do.</p>
+      <p class="idea-2" data-node-name="text3">But then I stopped.</p>
+      <p class="idea-3">
+        <span data-node-name="text4">I realised, I wanted to do something</span>
+        <strong data-node-name="text4Adjective">special</strong>.
+      </p>
+      <p class="idea-4" data-node-name="text5Entry">Because,</p>
+      <p class="idea-5">
+        <span data-node-name="text5Content">You are Special</span>
+        <span class="smiley" data-node-name="smiley">:)</span>
+      </p>
+      <p class="idea-6">
+        <span data-node-name="bigTextPart1">S</span>
+        <span data-node-name="bigTextPart2">O</span>
+      </p>
+    </div>
+    <div class="six">
+      <img src="img/fafa.png" alt="" class="lydia-dp" data-node-name="imagePath" width="500" height="500">
+      <img src="img/hat.svg" alt="" class="hat">
+      <div class="wish">
+        <h3 class="wish-hbd" data-node-name="wishHeading">Happy Birthday!</h3>
+        <h5 data-node-name="wishText">天天开心 :)</h5>
+      </div>
+    </div>
+    <div class="seven">
+      <div class="baloons">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+      </div>
+    </div>
+    <div class="eight">
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+    </div>
+
+    <div class="card">
+      <div class="outside">
+        <div class="front">
+          <p>Happy Birthday</p>
+          <div class="cake">
+            <div class="top-layer"></div>
+            <div class="middle-layer"></div>
+            <div class="bottom-layer"></div>
+            <div class="candle"></div>
+          </div>
+        </div>
+        <div class="back"></div>
+      </div>
+      <div class="inside">
+        <p id="replay" data-node-name="replayText">Wishing you a very happy birthday filled with love and laughter</p>
+        <h1>&#127873;</h1>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+<script type="application/javascript" src="script/main.js"></script>
+
+</html>
