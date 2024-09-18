@@ -1,5 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: white;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  background: #040d21;
 }
 
 .card {
@@ -147,14 +153,7 @@ body {
 
 
 
-html {
-  box-sizing: border-box;
-}
 
-body {
-  margin: 0;
-  font-family: "Work Sans", sans-serif;
-}
 
 .container {
   height: 100vh;
@@ -187,6 +186,7 @@ body {
 }
 
 .one {
+  display: block;
   font-size: 4.5rem;
 }
 
@@ -262,6 +262,7 @@ body {
 }
 
 .six {
+  display: block;
   position: relative;
 }
 
@@ -461,26 +462,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-.relative {
-  max-width: 1464px;
-  min-height: 864px;
-  padding: 6.5mm 0 0 !important;
-  margin-right: auto !important;
-  margin-left: auto !important;
-  background: #040d21;
-  position: relative;
-  display: block;
-
-}
-
 .padding {
   position: absolute;
   top: 30%;
@@ -513,6 +494,7 @@ body {
   background: linear-gradient(-210deg, #a2facf 0%, #64acff 100%);
   color: transparent;
   -webkit-background-clip: text;
+
   letter-spacing: -0.03em;
   display: block;
   align-items: center;
@@ -528,4 +510,5 @@ div {
   font-size: 50px;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }

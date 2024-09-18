@@ -10,9 +10,12 @@ const animationTimeline = () => {
   const month = d.getMonth() + 1;
   const day = d.getDate();
   console.warn(day == 18);
-  if (day == 18 && month == 10) {
+  if (day == 18 && month == 9) {
+    // 获取DIV元素的引用
 
-    console.warn(123);
+    // 将DIV元素设置为不可见
+    //div.style.display = "none";
+
     textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
       .split("")
       .join("</span><span>")}</span`;
@@ -35,12 +38,23 @@ const animationTimeline = () => {
       skewX: "-15deg"
     };
 
-
+    document.body.style.backgroundColor = 'white';
     const tl = new TimelineMax();
     //gift.addEventListener('click', (e) => {
     //  tl.play()
     //})
     tl
+      // .to(".relative"), 0.1, {
+      //   duration: 0.1,
+      //   autoAlpha: 0
+
+      // }
+      .to(".relative", 3, {
+        opacity: 0,
+        y: 10
+
+      })
+
       .to(".container", 0.1, {
         visibility: "visible"
       })
