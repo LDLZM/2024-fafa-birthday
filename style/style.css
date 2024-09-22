@@ -328,14 +328,11 @@ body {
 
 
 
-
-
-
-
 .padding {
   position: absolute;
-  top: 30%;
+
   left: 37%;
+  top: 30%;
   color: #fff;
   font-size: 118px;
   font-weight: 800;
