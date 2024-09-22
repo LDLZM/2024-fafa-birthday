@@ -287,28 +287,13 @@ const animationTimeline = () => {
         duration: 1,
         autoAlpha: 1
       })
-      .to(".bottom-layer", {
-        duration: 1,
-        autoAlpha: 1
-      })
-      .to(".middle-layer", {
-        duration: 1,
-        autoAlpha: 1
-      })
-      .to(".top-layer", {
-        duration: 1,
-        autoAlpha: 1
-      })
-      .to(".candle", {
-        duration: 1,
-        autoAlpha: 1
-      })
 
 
-    const replyBtn = document.getElementById("replay");
-    replyBtn.addEventListener("click", () => {
-      tl.restart();
-    });
+
+    // const replyBtn = document.getElementById("replay");
+    // replyBtn.addEventListener("click", () => {
+    // //   tl.restart();
+    // });
   } else {
     console.warn(123)
   }
