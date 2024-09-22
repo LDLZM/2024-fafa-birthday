@@ -2,11 +2,14 @@ html {
   box-sizing: border-box;
 }
 
+* {
+  cursor: url('/img/Fl.ico'), auto;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: #040d21;
-  cursor: url('/img/Fl.png'), auto;
 }
 
 .card {
