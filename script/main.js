@@ -12,8 +12,6 @@ const animationTimeline = () => {
   console.warn(day == 18);
   if (day == 30 && month == 9) {
     // 获取DIV元素的引用
-
-    // 将DIV元素设置为不可见
     //div.style.display = "none";
 
     textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
