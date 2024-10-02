@@ -3,11 +3,12 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Birthday Card</title>
+  <title>贺卡！！！</title>
   <!-- Google Font-->
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
   <!-- Stylesheet -->
   <link rel="stylesheet" href="card.css" />
+  <link rel="shortcut icon" type="image/png" href="/img/card.png" />
   <style>
     .express {
 
@@ -43,6 +44,25 @@
   <div>
     <a class="express" href="../express/express.html">来看看你的礼物到哪里了</a>
   </div>
+
+  <audio preload autoplay loop id="music">
+    <source src="/music/Happy_birthday_to_you_MIDI(chosic.com).mp3" type="audio/mpeg">
+  </audio>
+
 </body>
+
+<script type="text/javascript">
+  window.onload = function () {
+    setInterval("toggleSound()", 1);
+  }
+
+  function toggleSound() {
+    var music = document.getElementById("music");//获取ID  
+    if (music.paused) { //判读是否播放  
+      music.paused = false;
+      music.play(); //没有就播放 
+    }
+  }
+</script>
 
 </html>

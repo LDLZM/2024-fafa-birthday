@@ -10,7 +10,7 @@ const animationTimeline = () => {
   const month = d.getMonth() + 1;
   const day = d.getDate();
   console.warn(day == 18);
-  if (day == 18 && month == 10) {
+  if (day == 2 && month == 10) {
     // 获取DIV元素的引用
     //div.style.display = "none";
 

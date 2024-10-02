@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>快递来喽~</title>
+  <link rel="shortcut icon" type="image/png" href="/img/express.png" />
 </head>
 
 <body>
@@ -14,6 +15,24 @@
   <iframe name="kuaidi100" src="https://www.kuaidi100.com/frame/index.html" width="960" height="880" marginwidth="0"
     marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
 
+
+
+  <audio preload autoplay loop id="music">
+    <source src="/music/Happy_birthday_to_you_MIDI(chosic.com).mp3" type="audio/mpeg">
+  </audio>
 </body>
+<script type="text/javascript">
+  window.onload = function () {
+    setInterval("toggleSound()", 1);
+  }
+
+  function toggleSound() {
+    var music = document.getElementById("music");//获取ID  
+    if (music.paused) { //判读是否播放  
+      music.paused = false;
+      music.play(); //没有就播放 
+    }
+  }
+</script>
 
 </html>
