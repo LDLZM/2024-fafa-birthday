@@ -6,19 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>快递来喽~</title>
   <link rel="shortcut icon" type="image/png" href="/img/express.png" />
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
 </head>
 
 <body>
-  <h3>快递公司：中通快递</h3>
-  <h3>快递单号：</h3>
+  <style type="text/css">
+    body {
+      background: url("../img/background.jpg") no-repeat center center fixed;
+      /*兼容浏览器版本*/
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  </style>
+  <div>
+    <h3>快递公司：中通快递</h3>
+    <h3>快递单号：</h3>
+  </div>
 
-  <iframe name="kuaidi100" src="https://www.kuaidi100.com/frame/index.html" width="960" height="880" marginwidth="0"
-    marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
+  <div id="pic" class="pic">
+    <img class="1" src="../img/Training_Rod.png">
+    <img class="2" src="../img/Red_Mullet.png">
+    <img class="3" src="../img/Flounder.png">
+    <img class="4" src="../img/Red_Snapper.png">
+    <img class="5" src="../img/Halibut.png">
+    <img class="6" src="../img/Bamboo_Pole.png">
+    <img class="7" src="../img/White_Chicken.png">
+    <img class="8" src="../img/Hoe.png">
+    <img class="9" src="../img/Pickaxe.png">
+    <img class="10" src="../img/Axe.png">
+    <img class="11" src="../img/Watering_Can.png">
+    <img class="12" src="../img/Scythe.png">
+    <img class="13" src="../img/Steel_Smallsword.png">
+    <img class="14" src="../img/Cat_2.png">
+    <img class="15" src="../img/Horse_rider.png">
+  </div>
+  <div class="express">
+    <iframe id="express" name="kuaidi100" src="https://www.kuaidi100.com/frame/index.html" width="960" height="880"
+      marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
+  </div>
+
+
 
 
 
   <audio preload autoplay loop id="music">
-    <source src="/music/Happy_birthday_to_you_MIDI(chosic.com).mp3" type="audio/mpeg">
+    <source src="/music/ConcernedApe - Spring (It's A Big World Outside).mp3" type="audio/mpeg">
   </audio>
 </body>
 <script type="text/javascript">
@@ -34,5 +68,6 @@
     }
   }
 </script>
+<script type="application/javascript" src="./main.js"></script>
 
 </html>

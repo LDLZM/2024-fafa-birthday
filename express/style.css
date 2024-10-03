@@ -1,0 +1,21 @@
+#pic {
+  position: absolute;
+  top: 50px;
+}
+
+#express {
+  position: absolute;
+  top: 180px;
+  width: 1000px;
+}
+
+* {
+  font-family: YouYuan;
+  color: black;
+}
+
+#pic2 {
+  position: absolute;
+  left: 1000px;
+  top: 400px;
+}
