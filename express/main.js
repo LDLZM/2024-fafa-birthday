@@ -10,10 +10,12 @@ const animationTimeline = () => {
       duration: 3,
     })
 
-    .to(".express", 3), {
-    opacity: 0,
-    y: 10
-  }
+    .to(".hello", 3, {
+      opacity: 0,
+      y: 10,
+      duration: 3,
+    })
+
 
 }
 

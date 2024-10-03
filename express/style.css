@@ -11,11 +11,15 @@
 
 * {
   font-family: YouYuan;
-  color: black;
+
 }
 
-#pic2 {
+
+#hello {
+
   position: absolute;
-  left: 1000px;
-  top: 400px;
+  left: 1100px;
+  top: 245px;
+  font-size: 100px;
+
 }
