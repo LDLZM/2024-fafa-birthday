@@ -16,10 +16,20 @@
 
 
 #hello {
-
+  width: 400px;
+  height: 100%;
   position: absolute;
-  left: 1100px;
-  top: 245px;
+  left: 990px;
+  top: 0px;
   font-size: 100px;
+  background-color: aquamarine;
+  opacity: 0.5;
+  visibility: hidden;
+}
 
+#hello div {
+  position: relative;
+  color: blue;
+  left: 20%;
+  top: 25%;
 }
