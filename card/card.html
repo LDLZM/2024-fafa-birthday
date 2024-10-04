@@ -30,6 +30,16 @@
 </head>
 
 <body>
+  <img class="mouse" src="../img/Fl.ico" alt="">
+
+  <script type="text/javascript">
+    var mouse = document.querySelector('.mouse');
+    window.addEventListener('mousemove', function (event) {
+      mouse.style.left = event.clientX - mouse.offsetWidth / 2 + 'px';
+      mouse.style.top = event.clientY - mouse.offsetHeight / 2 + 'px';
+    })
+  </script>
+
   <div class="poem" id="poem">
     <p>投我以木瓜，报之以琼琚。</p>
     <p>匪报也，永以为好也！</p>
